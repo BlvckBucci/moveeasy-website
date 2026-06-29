@@ -39,11 +39,9 @@ body {
 }
 
 .hero {
-  .hero {
   text-align: center;
   margin-top: 140px;
   color: #ffffff;
-}
 }
 
 .hero h1 {
@@ -95,7 +93,7 @@ font-size:45px;
 
 .product-card {
   background: #111111;
-  padding: 20px;
+  padding:20 px;
   border-radius: 20px;
   border: 1px solid #222222;
 }
@@ -188,7 +186,7 @@ border-radius:15px;
   border-radius: 30px;
   cursor: pointer;
   font-weight: bold;
-  position: absolute;
+  
   
 }
 .cart-total {
@@ -277,4 +275,165 @@ border-radius:15px;
   padding-top: 20px;
   color: #888;
   font-size: 0.9rem;
+}
+/* ===========================
+   Tablet
+=========================== */
+
+@media screen and (max-width: 768px) {
+
+.container{
+    padding:20px;
+}
+
+.navbar{
+    flex-direction:column;
+    gap:15px;
+}
+
+.logo{
+    font-size:28px;
+}
+
+.shop-btn{
+    width:100%;
+    margin-right:0;
+}
+
+.hero{
+    margin-top:80px;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero p{
+    font-size:16px;
+    padding:0 10px;
+}
+
+.explore-btn{
+    width:100%;
+    max-width:280px;
+}
+
+.collection{
+    margin-top:100px;
+}
+
+.collection h2{
+    font-size:30px;
+}
+
+.products{
+    grid-template-columns:1fr;
+}
+
+.product-image{
+    height:260px;
+}
+
+.signup{
+    padding:40px 20px;
+}
+
+.signup h2{
+    font-size:28px;
+}
+
+.signup-form{
+    flex-direction:column;
+    align-items:center;
+}
+
+.signup-form input,
+.signup-form button{
+    width:100%;
+    max-width:350px;
+}
+
+.shop-page h2{
+    font-size:32px;
+}
+
+.checkout-form input{
+    width:100%;
+    max-width:350px;
+}
+
+.checkout-btn{
+    width:100%;
+    max-width:350px;
+    margin-right:0;
+}
+
+.footer{
+    padding:40px 20px;
+}
+
+.footer-links,
+.footer-socials{
+    gap:15px;
+}
+
+}
+
+/* ===========================
+   Small Phones
+=========================== */
+
+@media screen and (max-width:480px){
+
+.logo{
+    font-size:24px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+.hero p{
+    font-size:15px;
+}
+
+.collection h2,
+.shop-page h2,
+.signup h2{
+    font-size:26px;
+}
+
+.product-image{
+    height:220px;
+}
+
+.product-card{
+    padding:15px;
+}
+
+.shop-btn,
+.explore-btn,
+.cart-btn,
+.checkout-btn{
+    width:100%;
+}
+
+.signup-form input,
+.checkout-form input{
+    width:100%;
+}
+
+.footer-logo{
+    font-size:1.5rem;
+}
+
+.footer-text{
+    font-size:14px;
+}
+
+.copyright{
+    font-size:13px;
+}
+
 }
